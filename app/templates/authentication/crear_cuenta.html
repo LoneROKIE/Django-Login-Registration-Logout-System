@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta</title>
+</head>
+<body>
+        <!-- Apartado para crear cuenta de usuario -->        
+        <form action="" method="POST">
+            <h1>Crear Cuenta</h1>
+            {% csrf_token %}
+            <label for="username">Nombre de Usuario</label>
+            <input type="text" name="username" id="username" placeholder="Nombre de Usuario" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="password" name="password" id="password" placeholder="Contraseña" required>
+            <button type="submit" >Crear Cuenta </button>
+
+        </form>
+
+
+</body>
+</html>
